@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator</title>
+</head>
+<body>
+  <div id="logo">
+    <img src="/images/logo.svg">
+  </div>
+  <div id="container">
+    <div id="bill-section">
+      <div id="bill" class="dark-grayish-cyan font-14">Bill</div>
+      <div id="bill-inp" class="inp">
+        <img src="/images/icon-dollar.svg" id="Dolar">
+        <input id="bill-amount" type="text" placeholder="0">
+      </div>
+      <div id="select" class="dark-grayish-cyan font-14">Select Tip %</div>
+      <div id="percentage">
+        <button id="box-1" class="box" name="btn">
+          5%
+        </button>
+        <button id="box-2" class="box" name="btn">
+          10%
+        </button>
+        <button id="box-2" class="box" name="btn">
+          15%
+        </button>
+        <button id="box-2" class="box" name="btn">
+          25%
+        </button>
+        <button id="box-2" class="box" name="btn">
+          50%
+        </button>
+        <input type="text" id="custom" placeholder="Custom">
+      </div>
+      <div id="people" class="dark-grayish-cyan font-14">
+        Number of People
+        <span id="personError"></span>
+      </div>
+      <div id="people-amount" class="inp">
+        <img src="/images/icon-person.svg" id="Person">
+        <input id="people-count" type="text" placeholder="0">
+      </div>
+    </div>
+    <div id="tip-section">
+      <div id="tip" class="flex">
+        <div id="tip-type">
+          <div id="amount" class="clr-wht">Tip Amount</div>
+          <div class="person">/ person</div>
+        </div>
+        <div class="tip-amount">
+          <span class="dolar">$</span>
+          <span class="result-tip">0.00</span>
+        </div>
+      </div>
+      <div id="total-amount" class="flex">
+        <div id="total">
+          <div id="Total" class="clr-wht">Total</div>
+          <div class="person">/ person</div>
+        </div>
+        <div class="tip-amount">
+          <span class="dolar">$</span>
+          <span class="result-tip">0.00</span>
+        </div>
+      </div>
+      <button id="btn">RESET</button>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

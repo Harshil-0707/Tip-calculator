@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+    box-sizing:border-box;
+    font-family: 'Space Mono';
+}
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(185, 41%, 84%);
+}
+
+#container{
+    width: 50%;
+    display: flex;
+    padding: 34px;
+    margin-top: 60px;
+    border-radius: 18px;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+#bill-section{
+    width: 55%;
+    margin: 0 40px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.font-14{
+    font-size: 14px;
+}
+
+button{
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#select{
+    margin: 26px 0 0 0;
+}
+
+#percentage{
+    gap: 18px;
+    display: grid;
+    margin: 12px 0 18px 0;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+}
+
+.box:hover,
+.box:focus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(173, 58%, 74%);
+}
+
+#percentage #custom{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    text-align: end;
+    border-radius: 8px;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+}
+
+#percentage #custom::placeholder{
+    text-align: center;
+    font-size: 24px;
+    font-family: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+.inp{
+    position: relative;
+}
+
+.inp input{
+    width: 100%;
+}
+
+#bill-amount:hover,
+#bill-amount:focus,
+#people-count:hover,
+#people-count:hover,
+#percentage #custom:hover,
+#percentage #custom:focus{
+    cursor: pointer;
+    border: 2px solid hsl(172, 68%, 51%);
+}
+
+#Dolar,
+#Person{
+    width: 14px;
+    top: 44%;
+    left: 14px;
+    position: absolute;
+}
+
+#bill-amount::placeholder,
+#people-count::placeholder{
+    text-align: end;
+    font-size: 22px;
+    color: hsl(184, 19%, 68%);
+}
+
+#people-count,
+#bill-amount{
+    border: none;
+    outline: none;
+    text-align: end;
+    font-size: 22px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    margin: 10px 0 0 0;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(189, 41%, 97%);
+}
+
+#people{
+    display: flex;
+    justify-content: space-between;
+}
+
+.error{
+    color: hsl(0, 100%, 50%);
+}
+
+#tip-section{
+    width: 50%;
+    display: flex;
+    padding: 36px 30px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color:hsl(183, 100%, 15%);
+}
+
+.dark-grayish-cyan{
+    color:hsl(186, 14%, 43%);
+}
+
+#tip{
+    margin: 0 0 40px 0;
+}
+
+.dolar{
+    margin-right: -26px;
+}
+
+.tip-amount{
+    font-size: 42px;
+    color: hsl(172, 67%, 45%);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clr-wht{
+    color: #fff;
+}
+
+.person{
+    font-size: 13px;
+    color: hsl(184, 14%, 56%);
+}
+
+#btn{
+    padding: 8px 0;
+    font-size: 16px;
+    margin-top: auto;
+    font-weight: 700;
+    border-radius: 5px;
+    color: hsla(183, 100%, 15%, 0.299);
+    background-color: hsl(183, 55%, 28%);
+}
+
+#btn:hover{
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(173, 58%, 74%);
+}
