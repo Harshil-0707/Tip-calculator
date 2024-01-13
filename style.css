@@ -18,7 +18,7 @@ body{
 }
 
 #container{
-    width: 50%;
+    width: 60%;
     display: flex;
     padding: 34px;
     margin-top: 60px;
@@ -66,10 +66,15 @@ button:hover{
     background-color: hsl(183, 100%, 15%);
 }
 
-.box:hover,
-.box:focus{
+.box:hover{
+    cursor: pointer;
     color: hsl(183, 100%, 15%);
     background-color: hsl(173, 58%, 74%);
+}
+
+.btn-clr{
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%);
 }
 
 #percentage #custom{
@@ -105,7 +110,7 @@ button:hover{
 #percentage #custom:hover,
 #percentage #custom:focus{
     cursor: pointer;
-    border: 2px solid hsl(172, 68%, 51%);
+    border: 2px solid hsl(172, 68%, 51%)
 }
 
 #Dolar,
@@ -141,10 +146,6 @@ button:hover{
     justify-content: space-between;
 }
 
-.error{
-    color: hsl(0, 100%, 50%);
-}
-
 #tip-section{
     width: 50%;
     display: flex;
@@ -159,7 +160,7 @@ button:hover{
 }
 
 #tip{
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
 }
 
 .dolar{
@@ -186,7 +187,7 @@ button:hover{
     color: hsl(184, 14%, 56%);
 }
 
-#btn{
+.btn{
     padding: 8px 0;
     font-size: 16px;
     margin-top: auto;
@@ -196,8 +197,44 @@ button:hover{
     background-color: hsl(183, 55%, 28%);
 }
 
-#btn:hover{
+.btn:hover{
     cursor: pointer;
     color: hsl(183, 100%, 15%);
     background-color: hsl(173, 58%, 74%);
+}
+
+.reset-btn-clr{
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(172, 67%, 45%);
+}
+
+@media (max-width:376px){
+    body{
+        height: 140vh;
+    }
+    #logo{
+        height: 10%;
+        margin-top: 52px;
+    }
+    #container{
+        width: 100%;
+        margin: 0px;
+        padding: 40px 20px;
+        flex-direction: column;
+        border-radius: 20px 20px 0 0;
+    }
+    #bill-section{
+        margin: 0 0 40px 0;
+    }
+    #bill-section,
+    #tip-section{
+        width: 100%;
+    }
+    #percentage{
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #total-amount{
+        margin-bottom: 30px;
+    }
 }
