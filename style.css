@@ -57,6 +57,11 @@ button:hover{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#personError{
+    display: none;
+    color: red;
+}
+
 .box{
     border: none;
     color: #fff;
@@ -104,13 +109,9 @@ button:hover{
 }
 
 #bill-amount:hover,
-#bill-amount:focus,
 #people-count:hover,
-#people-count:hover,
-#percentage #custom:hover,
-#percentage #custom:focus{
+#percentage #custom:hover{
     cursor: pointer;
-    border: 2px solid hsl(172, 68%, 51%)
 }
 
 #Dolar,

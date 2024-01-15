@@ -5,7 +5,8 @@ const peopleCount = document.getElementById('people-count');
 const custom = document.getElementById('custom');
 const tip_total = document.getElementById('tip-total');
 const total = document.getElementById('total-result');
-const personError = document.getElementById('personError');
+const personError = document.getElementById('personError')
+const userInput = document.querySelectorAll('.userInput');
 
 
 tip.forEach((button) => {
@@ -13,19 +14,36 @@ tip.forEach((button) => {
 });
 
 function calculateTip(){
+    error();
     resetBtn.classList.add("reset-btn-clr");
-    one();
     tip.forEach((button) => {
         button.classList.remove('btn-clr');
-        custom.value = "";
     });
     this.classList.add('btn-clr');
 }
 
+function calculate(){
+
+}
+
+userInput.forEach((Input) =>{
+    Input.addEventListener('click',userinp);
+});
+
+function userinp(){
+    userInput.forEach((inp)=>{
+        inp.style.border ="none";
+    });
+    this.style.border = "2px solid hsl(172, 68%, 51%)";
+}
+
 resetBtn.addEventListener('click', () => {
     resetBtn.classList.remove("reset-btn-clr");
-    tip.forEach((button) => {
+    tip.forEach(button => {
         button.classList.remove('btn-clr');
+    });
+    userInput.forEach((inp)=>{
+        inp.style.border ="none";
     });
     custom.value = "";
     billInput.value = "";
@@ -33,15 +51,19 @@ resetBtn.addEventListener('click', () => {
     total.innerHTML = "0.00";
     personError.innerHTML="";
     tip_total.innerHTML = "0.00";
+    peopleCount.style.border = 'none';
 });
 
-function one(){
-    if(personError.value == 0){
-        personError.innerHTML = "Can't be zero";
-    }else if(personError.value == ""){
-        personError.innerHTML = "Can't be empty";
-    }else if(personError.value <= 0){
-        personError.innerHTML = "Can't be lest than zero";
+const borderError = () => peopleCount.style.border ="2px solid red";
+
+function error(){
+    personError.style.display = "block";
+    if(peopleCount.value == 0 ){
+        borderError();
+        personError.innerText = "Can't be zero"
+    }else if(peopleCount.value <= 0){
+        borderError();
+        personError.innerHTML = "Can't be less than zero";
     }else{
         personError.innerHTML = "";
     }

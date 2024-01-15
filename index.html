@@ -16,7 +16,7 @@
       <div id="bill" class="dark-grayish-cyan font-14">Bill</div>
       <div id="bill-inp" class="inp">
         <img src="/images/icon-dollar.svg" id="Dolar">
-        <input id="bill-amount" type="text" placeholder="0">
+        <input id="bill-amount" class="userInput" type="text" placeholder="0">
       </div>
       <div id="select" class="dark-grayish-cyan font-14">Select Tip %</div>
       <div id="percentage">
@@ -25,15 +25,15 @@
         <input type="button" id="box-2" class="box percent" name="btn" value="15%"/>
         <input type="button" id="box-2" class="box percent" name="btn" value="25%"/>
         <input type="button" id="box-2" class="box percent" name="btn" value="50%"/>
-        <input type="text" id="custom" class="percent" placeholder="Custom"/>
+        <input type="text" id="custom" class="percent userInput"  placeholder="Custom"/>
       </div>
       <div id="people" class="dark-grayish-cyan font-14">
         Number of People
-        <span id="personError"></span>
+        <span id="personError">Can't be empty</span>
       </div>
       <div id="people-amount" class="inp">
         <img src="/images/icon-person.svg" id="Person">
-        <input id="people-count" type="text" placeholder="0">
+        <input class="userInput" id="people-count" type="text" placeholder="0">
       </div>
     </div>
     <div id="tip-section">
